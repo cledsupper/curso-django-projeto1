@@ -119,6 +119,16 @@
             border-color: var(--color-primary);
         }
 
+        .main-content {
+            padding-top: 0;
+        }
+
+        .main-content-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: var(--spacing-gutter-large)
+        }
+
         :root {
             --color-primary: #269fe6;
             --color-primary-hover: #2086c2;
