@@ -111,6 +111,11 @@
             background: rgba(0, 0, 0, .05);
         }
 
+        .search-button:hover {
+            border-color: var(--color-primary);
+            background: var(--color-white);
+        }
+
         .search-form:focus-within {
             border-color: var(--color-primary);
             background: var(--color-white);
@@ -212,6 +217,32 @@
 
         .recipe-footer a:hover {
             filter: brightness(2);
+        }
+
+        .main-footer {
+            background: var(--color-black);
+            padding: var(--spacing-gutter-large);
+        }
+
+        .main-footer a {
+            color: var(--color-white);
+            text-decoration: none;
+        }
+
+        .main-footer .dev-led {
+            color: rgba(0, 127, 127, 1);
+        }
+
+        .main-footer .dev-so {
+            color: rgba(127, 0, 127, 1);
+        }
+
+        .developer {
+            display: inline-block;
+        }
+
+        .powered {
+            float: right;
         }
 
         :root {
