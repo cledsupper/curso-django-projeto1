@@ -1,4 +1,3 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 from utils.recipes.factory import make_recipe
 
