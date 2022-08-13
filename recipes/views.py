@@ -14,9 +14,3 @@ def recipe(request, id):
         'recipe': make_recipe(),
         'is_detail_page': True,
     }, status=200)
-
-
-def recipe(request, id):
-    return render(request, 'recipes/pages/recipe-view.html', {
-        'name': 'Tales Silva'
-    }, status=200)
