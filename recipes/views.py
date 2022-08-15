@@ -8,6 +8,7 @@ from recipes.models import Recipe
 def home(request):
     recipes = Recipe.objects.all().order_by('-id')
     return render(request, 'recipes/pages/home.html', {
+        'title': 'Home',
         'recipes': recipes,
     }, status=200)
 
@@ -17,6 +18,7 @@ def category(request, category_id):
         category__id=category_id
     ).order_by('-id')
     return render(request, 'recipes/pages/home.html', {
+        'title': f'{recipes.first().category.name} - Category',
         'recipes': recipes,
     }, status=200)
 
@@ -24,6 +26,7 @@ def category(request, category_id):
 def recipe(request, id):
     recipe = Recipe.objects.get(id=id)
     return render(request, 'recipes/pages/recipe-view.html', {
+        'title': f'{recipe.title} - Recipe',
         'recipe': recipe,
         'is_detail_page': True,
     }, status=200)
