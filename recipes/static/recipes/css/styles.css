@@ -267,6 +267,18 @@ h6 {
     float: right;
 }
 
+.center {
+    text-align: center;
+}
+
+.m-x {
+    margin: 0 var(--spacing-gutter-medium);
+}
+
+.m-y {
+    margin: var(--spacing-gutter-medium) 0;
+}
+
 :root {
     --color-primary: #269fe6;
     --color-primary-hover: #2086c2;
